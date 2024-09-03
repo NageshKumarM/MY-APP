@@ -201,5 +201,38 @@ REACTIVE FORMS:
 5) FormValidations
 
 
+Angular Life Cycle:
+==================
+These are total 8:
+1) ngOnChanges
+2) ngonInit
+-› it is for variable initialization
+→ It will trigger when ever parent to child communication value changes
+3) ngDoCheck
+-> It will call automatically for every change detection in angular.
+4) ngAfterContentInit
+5) ngAfterContentChecked
+-> It will trigger whenever new content comes into the component.
+(like content projection)
+6) ngAfterViewInit
+7) ngAfterViewChecked
+→ It will trigger after view rendered in template.
+8) ngOnDestroy
+-> It will call before destroying component.
 
+Questions:
+----------
+1) Which will call first constructor or ngOnChanges?
+-> constructor
+2) What is the difference between constructor and ngOnInit?
+-> both are for variable initialization only.
+-> ngOnInit knows parent to child value but not for constructor.
+
+
+Component Communincation:
+========================
+
+1) parent to child
+2) child to parent
+3) sibling communication
 

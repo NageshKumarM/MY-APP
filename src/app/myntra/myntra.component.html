@@ -4,7 +4,10 @@
       <div class="image">
         <img src="{{ data.image }}" alt="" />
         <div class="rating">
-          <p>{{ data.rating.rate }}</p>
+          <p>
+            <!-- {{ data.rating.rate }} -->
+            <app-rating [rating]=" data.rating.rate " class="starbox"></app-rating>
+          </p>
         </div>
       </div>
       <div class="category">

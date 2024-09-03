@@ -33,6 +33,10 @@ import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewbankdetailsComponent } from './viewbankdetails/viewbankdetails.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAreaComponent } from './text-area/text-area.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +67,11 @@ import { CreateUserComponent } from './create-user/create-user.component';
     ReloadComponent,
     ViewVehicleComponent,
     ViewbankdetailsComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    TextAreaComponent
   ],
   imports: [
     BrowserModule,

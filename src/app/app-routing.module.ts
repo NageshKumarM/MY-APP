@@ -28,6 +28,7 @@ import { ReloadComponent } from './reload/reload.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewbankdetailsComponent } from './viewbankdetails/viewbankdetails.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -58,6 +59,7 @@ const routes: Routes = [
     {path:'edit-vehicle/:id', component:CreateVehicleComponent},
     {path:'editbankaccount/:id', component:CreateBankAccountComponent},
     {path: 'createuser', component:CreateUserComponent},
+    {path:'parent', component:ParentComponent},
     {path:'', component:WelcomeComponent}
   ]},
   {path:'',component:LoginComponent},

@@ -1,0 +1,13 @@
+<p>parent works!</p>
+
+<h2>b in parent {{bp}}</h2>
+
+<input type="text" [(ngModel)]="ap">
+
+<!-- [ac]="ap" -> Parent to Child -->
+<!-- catch -> "(bEVent)=catch($event)" -->
+<app-child [ac]="ap" (bEvent)="catch($event)"></app-child>  
+<br> <br>
+<!-- <input type="number" placeholder="enter maximum character allowed" [(ngModel)]="maxValue"> -->
+
+<app-text-area [max]="maxValue"></app-text-area>
