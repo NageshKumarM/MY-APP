@@ -1,0 +1,58 @@
+/* Ensure the body takes full height */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Light background color for contrast */
+  }
+  
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .child img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px; /* Optional: round the corners of the image */
+  }
+  
+  .child img.rolling {
+    transform: rotate(360deg); /* Animation effect */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #003f7f;
+    transform: scale(0.98); /* Slightly shrink button on click */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

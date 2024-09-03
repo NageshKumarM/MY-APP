@@ -1,0 +1,91 @@
+<div class="parent">
+  <div class="functions">
+    <input
+      type="text"
+      [(ngModel)]="term"
+      (keyup)="filter()"
+      placeholder="search by name"
+    />
+
+    <label for="">Column:</label>
+    <select name="" id="" [(ngModel)]="column">
+      <option>name</option>
+    </select>
+
+    <label for="">Order:</label>
+    <select name="" id="" [(ngModel)]="order">
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+    <button (click)="sort()">sort</button>
+
+    <br />
+    <br />
+
+    <label for="">Count:</label>
+    <input type="number" name="" id="" [(ngModel)]="count" />
+    <label for="">PageNo:</label>
+    <input type="number" name="" id="" [(ngModel)]="page" />
+    <button (click)="limit()">paginate</button>
+  </div>
+  <div class="child">
+    <div class="box" *ngFor="let data of students">
+      <div class="top">
+        <img src="{{ data.school_logo }}" alt="school_logo" />
+        <h2>{{ data.school_name }}</h2>
+      </div>
+      <div class="middle">
+        <div class="label">
+          <label for="">Name:</label>
+          <span class="output">
+            <label for="">{{ data.name }}</label>
+          </span>
+
+          <br />
+          <label for="">Phone:</label>
+          <span class="output">
+            <label for="">{{ data.phone }}</label>
+          </span>
+
+          <br />
+          <label for="">DOB:</label>
+          <span class="output">
+            <label for="">{{ data.dob }}</label>
+          </span>
+
+          <br />
+          <label for="">City:</label>
+          <span class="output">
+            <label for="">{{ data.city }}</label>
+          </span>
+
+          <br />
+          <label for="">Email:</label>
+          <span class="output">
+            <label for="">{{ data.email }}</label>
+          </span>
+        </div>
+        <div class="profile">
+          <img src="{{ data.profile_picture }}" alt="profile_picture" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bttm">
+          <div>
+            <label for="">school_city: </label>
+            <label for="">{{ data.school_city }}</label>
+          </div>
+          <div>
+            <label for="">school_pin: </label>
+            <label for="">{{ data.school_pin }}</label>
+          </div>
+        </div>
+        <div class="bttns">
+          <button class="view">View</button>
+          <button class="edit">Edit</button>
+          <button (click)="delete(data.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

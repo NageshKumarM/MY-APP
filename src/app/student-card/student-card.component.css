@@ -1,0 +1,205 @@
+.parent {
+  background-color: teal;
+  padding: 20px;
+  gap: 20px;
+}
+
+.functions {
+    /* display:contents; */
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .functions input[type="text"],
+  .functions select,
+  .functions input[type="number"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    max-width: 100%;
+    margin-right: 10px;
+  }
+  
+  .functions label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .functions button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .functions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .functions input[type="number"] {
+    width: 100px;
+  }
+  
+  .functions select {
+    width: 150px;
+  }
+  
+  @media (max-width: 768px) {
+    .functions {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  
+    .functions input[type="text"],
+    .functions select,
+    .functions input[type="number"],
+    .functions button {
+      width: 100%;
+    }
+  }
+  
+
+.child {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+
+.box {
+  background-color: #028474; /* Background color similar to the image */
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 270px;
+  padding: 0;
+  margin: 10px;
+  /* text-align: left; */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top {
+  background-color: #ff7841; /* Orange color for the header */
+  width: 100%;
+  height: 10%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top img {
+  width: 50px;
+  /* height: 50px; */
+  vertical-align: middle;
+}
+
+.top h2 {
+  font-size: 1.2em;
+  margin: 0;
+  color: white;
+}
+
+.middle {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.output {
+  color: blue;
+}
+
+.label {
+  padding-left: 15px;
+  width: 70%;
+  /* height: 100%; */
+  font-weight: bold;
+  align-items: center;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+.profile {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  padding-right: 15px;
+  vertical-align: middle;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile img {
+  height: 50%;
+  width: 100%;
+}
+
+.bottom {
+  width: 100%;
+  /* height: 10%; */
+  background-color: green; /* Dark background for bottom section */
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.bttns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button.view {
+  background-color: black; /* Black color for the View button */
+}
+
+button.edit {
+  background-color: rgb(70, 169, 202); /* Black color for the View button */
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.bttm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

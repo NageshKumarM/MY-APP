@@ -1,0 +1,27 @@
+div {
+    max-width: 400px;        /* Limit the width of the container */
+    margin: 20px auto;      /* Center the container with margin */
+    padding: 20px;          /* Add padding inside the container */
+    border-radius: 10px;    /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #ffffff; /* Background color for the container */
+    text-align: left;       /* Align text to the left */
+  }
+  
+  h1 {
+    font-size: 18px;        /* Font size for headings */
+    color: #333333;         /* Dark grey color for text */
+    margin: 10px 0;        /* Margin above and below each heading */
+    line-height: 1.5;      /* Spacing between lines for readability */
+  }
+  
+  h1:first-of-type {
+    font-weight: bold;      /* Make the first heading bold */
+    font-size: 22px;       /* Slightly larger font size for the first heading */
+    color: #000000;         /* Black color for the first heading */
+  }
+  
+  h1:last-of-type {
+    margin-bottom: 0;      /* Remove bottom margin for the last heading */
+  }
+  

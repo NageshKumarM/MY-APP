@@ -1,0 +1,65 @@
+<p>directive-pipes works!</p>
+
+<!-- for(let age of ages){
+ console.log(age);
+ } -->
+
+<!-- *ngFor -->
+
+<h1 *ngFor="let age of ages">My age is {{ age }}</h1>
+
+<ul>
+  <li *ngFor="let state of states">
+    {{ state | uppercase }}
+  </li>
+</ul>
+
+<select name="" id="">
+  <option *ngFor="let state of states; let i=index">
+    {{i+1}} {{ state | lowercase }}
+  </option>
+</select>
+
+<h3 *ngFor="let user of users">
+  My name is {{ user.name }} with age {{ user.age }}. My country is
+  {{ user.country }}.
+</h3>
+
+<table border="1" [cellSpacing]="0" [cellPadding]="5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>country</th>
+      <th>Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td [ngStyle]="{ color: user.age < 18 ? 'green' : 'red' }">
+        {{ user.age }}
+      </td>
+      <td>{{ user.country }}</td>
+      <td [ngClass]="{
+          pass: user.marks >= 35,
+          fail: user.marks < 35 && user.marks >= 0,
+          invalid: user.marks < 0 || user.marks > 100
+        }">
+        {{ user.marks }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- *ngIf -->
+
+<h1 *ngIf="false">Hello text one</h1>
+<h1 *ngIf="true">Hello text two</h1>
+
+<!-- PIPES -->
+ <h1>{{today | date}}</h1>
+ <h1>{{today | date:'yyyy-MM-dd'}}</h1>
+ <h1>{{today | date:'dd/MM//yy'}}</h1>
+ <h1>{{today | date:'dd/MMM/yyyy'}}</h1>
+ <h1>{{today | date: 'EEEE, MMMM/dd/yy, h:mm:ss a zzzz'}}</h1>

@@ -1,0 +1,86 @@
+form {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+div[formGroupName] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+div[formArrayName] {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+div[formArrayName] h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+div[formGroupName] label {
+    margin-top: 10px;
+}
+
+div[formGroupName] input[type="text"], div[formGroupName] input[type="number"] {
+    margin-bottom: 10px;
+}
+
+.error{
+    color: red;
+    margin: 0;
+}

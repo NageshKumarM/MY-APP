@@ -1,0 +1,26 @@
+<form [formGroup]="bankForm">
+    <h2>{{ id ? 'Edit Bank Account Form' : 'Create Bank Account Form'}}</h2>
+    <br>
+
+    <label for="">Name:</label>
+    <input type="text" formControlName="account_name">
+    <br>
+
+    <label for="">Balance:</label>
+    <input type="number" formControlName="available_balance" >
+    <br>
+
+    <label for="">Number:</label>
+    <input type="number" formControlName="account_number">
+    <br>
+
+    <label for="">City:</label>
+    <input type="text" formControlName="city">
+    <br>
+
+    <label for="">Image:</label>
+    <input type="text" formControlName="profie_picture">
+    <br>
+
+    <button (click)="create()">{{ id ? 'Update' : 'Create'}}</button>
+</form>

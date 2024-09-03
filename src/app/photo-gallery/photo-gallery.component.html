@@ -1,0 +1,9 @@
+<div *ngFor="let data of photogallery, let i=index">
+    <label for="">{{data.name}}</label>
+    <br>
+    <label for="">{{data.width}}</label>
+    <br>
+    <label for="">{{data.height}}</label>
+    <br>
+    <img src="{{data.url}}" alt="">
+</div>

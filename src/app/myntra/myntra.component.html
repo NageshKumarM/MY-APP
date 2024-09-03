@@ -1,0 +1,21 @@
+<div class="parent">
+  <div class="child">
+    <div class="box" *ngFor="let data of Myntra">
+      <div class="image">
+        <img src="{{ data.image }}" alt="" />
+        <div class="rating">
+          <p>{{ data.rating.rate }}</p>
+        </div>
+      </div>
+      <div class="category">
+        <p>{{ data.category }}</p>
+      </div>
+      <div class="title">
+        <label for="">{{ data.title }}</label>
+      </div>
+      <div class="price">
+        <h3>Rs.{{ data.price }}</h3>
+      </div>
+    </div>
+  </div>
+</div>

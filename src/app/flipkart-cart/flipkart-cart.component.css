@@ -1,0 +1,133 @@
+/* General styling for the entire layout */
+.parent {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f4f8; /* Light background for the parent container */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling for the child container */
+  .child {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: teal; /* White background for the child container */
+  }
+  
+  /* Styling for the top section */
+  .top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    padding: 10px; /* Reduced padding */
+    border-bottom: 2px solid #007bff; /* Blue border for separation */
+    background-color:steelblue; /* Light blue background for the top section */
+  }
+  
+  /* Styling for the left side of the top section */
+  .topleft {
+    width: 70%;
+    height: 100%;
+    flex: 1;
+    padding: 5px; /* Reduced padding */
+  }
+  
+  /* Styling for buttons and input elements */
+  input[type="text"],
+  input[type="number"],
+  button {
+    margin: 5px; /* Reduced margin */
+    padding: 6px 10px; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Slightly smaller border radius */
+    font-size: 12px; /* Smaller font size */
+  }
+  
+  /* Add double spacing between buttons */
+  button {
+    margin-bottom: 12px; /* Double spacing */
+    margin-right: 12px;
+    background-color:tomato ; /* Blue background for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  
+  /* Styling for the right side of the top section */
+  .topright {
+    width: 30%;
+    height: 100%;
+    flex: 1;
+    padding: 5px; /* Reduced padding */
+    border-left: 2px solid #007bff; /* Blue border for separation */
+    background-color: #f1f1f1; /* Light gray background for the form area */
+  }
+  
+  /* Styling for the bottom section */
+  .bottom {
+    padding: 20px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #343a40; /* Dark background for the table */
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  thead {
+    background-color: #495057; /* Darker gray for table header */
+  }
+  
+  th, td {
+    padding: 8px; /* Reduced padding */
+    text-align: left;
+  }
+  
+  td {
+    background-color: #495057; /* Dark background for table cells */
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #6c757d; /* Lighter dark gray for alternate rows */
+  }
+  
+  /* Hover effects for table rows */
+  tr:hover td {
+    background-color: #adb5bd; /* Light gray for hover effect */
+  }
+  
+  /* Label styling */
+  label {
+    display: inline-block;
+    margin: 0px 0; /* Reduced margin */
+  }
+  
+  /* Responsive design: stack items vertically on smaller screens */
+  @media (max-width: 768px) {
+    .top {
+      flex-direction: column;
+    }
+  
+    .topright {
+      border-left: none;
+      border-top: 2px solid #007bff; /* Blue border on top for smaller screens */
+    }
+  
+    .bottom {
+      margin-top: 10px;
+    }
+  }
+  

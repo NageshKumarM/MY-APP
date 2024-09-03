@@ -1,0 +1,107 @@
+/* Container for the input and buttons */
+.controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.controls button:active {
+  background-color: #003f7f;
+}
+
+.controls button:focus {
+  outline: none;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Zebra striping for better readability */
+}
+
+tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:hover {
+  background-color: #e9f3fe; /* Light blue background on hover */
+}
+
+tbody td button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+tbody td button:hover {
+  background-color: #c82333;
+}
+
+tbody td button:focus {
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  table {
+    font-size: 16px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 10px;
+  }
+
+  .controls input[type="text"] {
+    width: 200px;
+  }
+
+  .controls button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}

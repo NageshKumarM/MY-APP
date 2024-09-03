@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  .parent {
+    height: 100%;
+    width: 100%;
+    background-color: sandybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .child {
+    width: 95%;
+    height: 75%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .child1 {
+    width: 95%;
+    height: 75%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .left {
+    width: 40%;
+    height: 85%;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0px 8px 5px gray;
+  }
+  .height {
+    height: 25%;
+    width: 100%;
+  }
+  .weight {
+    height: 25%;
+    width: 100%;
+  }
+  input {
+    width: 45%;
+    padding: 10px;
+  }
+  .box {
+    border: 1px solid gray;
+    border-start-end-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+  }
+  .calc{
+      width: 30%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      flex-direction: column;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+  }
+  
+  .reuslt {
+    text-align: center;
+  }
+  
+  .right {
+    width: 45%;
+    height: 92%;
+    background-color: silver;
+    border-radius: 10px;
+  }
+  
+  .rightimg{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+  }
+  
