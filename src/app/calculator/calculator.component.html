@@ -15,6 +15,9 @@
     <button [disabled]="!num1 || !num2" (click)="mul()">mul</button>
     <button [disabled]="!num1 || !num2" (click)="sub()">sub</button>
 
-    <h1>Result is : {{ result }}</h1>
+    <!-- <h1>Result is : {{ result }}</h1> -->
+    <h1>Result : {{result2}}</h1>
   </div>
 </div>
+<hr>
+<app-calcfunctions [number1]="num1" [number2]="num2" (event)="catch($event)"></app-calcfunctions>

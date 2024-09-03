@@ -37,6 +37,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextAreaComponent } from './text-area/text-area.component';
+import { CalcfunctionsComponent } from './calcfunctions/calcfunctions.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { TextAreaComponent } from './text-area/text-area.component';
     ParentComponent,
     ChildComponent,
     RatingComponent,
-    TextAreaComponent
+    TextAreaComponent,
+    CalcfunctionsComponent
   ],
   imports: [
     BrowserModule,
