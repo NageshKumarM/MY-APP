@@ -236,3 +236,13 @@ Component Communincation:
 2) child to parent
 3) sibling communication
 
+
+MODLE COMMUNICATION:
+==================
+1) Eager Loading 
+
+    -> Create a feature module (ng g m XXXXXXX)
+    -> Import that feature modlue in app module
+2) 
+3) 
+

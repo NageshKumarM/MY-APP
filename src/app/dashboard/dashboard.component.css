@@ -1,79 +1,71 @@
+/* General styles */
 body {
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .parent {
-    height: 100vh;
-    width: 100vw;
     display: flex;
-    font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
-/* Left side (Navigation) */
+/* Left sidebar styles */
 .left {
-    width: 18%;
-    height: 100%;
+    width: 250px;
     background-color: #333;
-    padding: 20px;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-y: auto;
-    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 .left h2 {
     color: #fff;
-
-}
-
-.left a {
-    text-decoration: none;
-    color: #bbb;
-    padding: 10px 0;
-    display: block;
     text-align: center;
-    width: 100%;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-.left a:hover {
-    color: white;
-    background-color: #444;
 }
 
 .left hr {
-    width: 100%;
+    border: 1px solid #555;
     margin: 20px 0;
-    border: 0.5px solid #555;
+}
+
+.left a {
+    display: block;
+    color: #fff;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.left a:hover {
+    background-color: #444;
 }
 
 .left button {
-    padding: 10px 15px;
-    background-color: #e74c3c;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: auto;
     width: 100%;
-    text-align: center;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .left button:hover {
     background-color: #c0392b;
 }
 
-/* Right side (Content area) */
+/* Right content styles */
 .right {
-    width: 82%;
-    height: 100%;
-    /* flex-grow: 1; */
+    flex-grow: 1;
     padding: 20px;
-    background-color: white;
-    overflow: auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.router-outlet {
+    display: block;
 }
