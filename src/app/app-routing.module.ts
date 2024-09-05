@@ -29,6 +29,9 @@ import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewbankdetailsComponent } from './viewbankdetails/viewbankdetails.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ParentComponent } from './parent/parent.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { MarketingComponent } from './marketing/marketing.component';
+import { TODOComponent } from './todo/todo.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -60,6 +63,9 @@ const routes: Routes = [
     {path:'editbankaccount/:id', component:CreateBankAccountComponent},
     {path: 'createuser', component:CreateUserComponent},
     {path:'parent', component:ParentComponent},
+    {path:'sibling',component:SiblingComponent},
+    {path:'marketing', component:MarketingComponent},
+    {path:'to-do',component:TODOComponent},
     {path:'', component:WelcomeComponent}
   ]},
   {path:'',component:LoginComponent},

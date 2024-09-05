@@ -1,0 +1,43 @@
+/* Parent container */
+.parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Child 1 */
+  .child1 {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    /* background-color: #ff9999;  */
+    text-align: center;
+    border-radius: 10px;
+    height: 500px; /* Increased height */
+    background: linear-gradient(to bottom right, #f3625d,#308f04);
+  }
+  
+  /* Child 2 */
+  .child2 {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #99ccff; /* Blue */
+    text-align: center;
+    border-radius: 10px;
+    height: 500px; /* Increased height */
+  }
+  
+  /* Child 3 */
+  .child3 {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #99ff99; /* Green */
+    text-align: center;
+    border-radius: 10px;
+    height: 500px; /* Increased height */
+  }
+  

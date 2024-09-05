@@ -38,6 +38,18 @@ import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextAreaComponent } from './text-area/text-area.component';
 import { CalcfunctionsComponent } from './calcfunctions/calcfunctions.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { MarketingComponent } from './marketing/marketing.component';
+import { Market1Component } from './market1/market1.component';
+import { Market2Component } from './market2/market2.component';
+import { Market3Component } from './market3/market3.component';
+import { Market4Component } from './market4/market4.component';
+import { TODOComponent } from './todo/todo.component';
+import { ToDo1Component } from './to-do1/to-do1.component';
+import { ToDo2Component } from './to-do2/to-do2.component';
+import { ToDo3Component } from './to-do3/to-do3.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +85,19 @@ import { CalcfunctionsComponent } from './calcfunctions/calcfunctions.component'
     ChildComponent,
     RatingComponent,
     TextAreaComponent,
-    CalcfunctionsComponent
+    CalcfunctionsComponent,
+    SiblingComponent,
+    Sibling1Component,
+    Sibling2Component,
+    MarketingComponent,
+    Market1Component,
+    Market2Component,
+    Market3Component,
+    Market4Component,
+    TODOComponent,
+    ToDo1Component,
+    ToDo2Component,
+    ToDo3Component
   ],
   imports: [
     BrowserModule,
