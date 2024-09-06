@@ -1,0 +1,62 @@
+.parent {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .text, .date {
+    margin-bottom: 10px;
+  }
+  
+  .text label, .date label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .text h2, .date h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .button button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .button button:hover {
+    opacity: 0.9;
+  }
+  
+  .button button:focus {
+    outline: none;
+  }
+  
+  .button button:nth-child(1) {
+    background-color: #4caf50; /* View button - Green */
+  }
+  
+  .button button:nth-child(2) {
+    background-color: #1976d2; /* Edit button - Blue */
+  }
+  
+  .button button:nth-child(3) {
+    background-color: #f44336; /* Delete button - Red */
+  }
+  

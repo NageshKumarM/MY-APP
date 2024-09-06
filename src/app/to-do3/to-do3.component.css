@@ -1,0 +1,21 @@
+.parent {
+    width: 85%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    height: 50%;
+    overflow-y: auto;
+  }
+  
+  .parent h3 {
+    /* font-size: 20px; */
+    /* color: #333; */
+    margin: 0;
+    padding: 10px 0;
+  }
+  

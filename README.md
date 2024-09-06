@@ -243,6 +243,21 @@ MODLE COMMUNICATION:
 
     -> Create a feature module (ng g m XXXXXXX)
     -> Import that feature modlue in app module
-2) 
-3) 
+2) Lazy loading
+
+    ->Create module with routing module (ng g m XXX --routing=true)
+    ->create lazy loading path
+        {
+         path: 'payments',
+         loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+        },
+3) Pre Loading 
+
+    -> Downloading lazy loading module immediatly after download the eager module
+    -> pre loading path:
+
+        @NgModule({
+                        imports: [RouterModule.forRoot(routes, {preloadingStrategy:PreloadAllModules})],
+                        exports: [RouterModule]
+                  })
 

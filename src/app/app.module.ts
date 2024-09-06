@@ -51,6 +51,7 @@ import { ToDo1Component } from './to-do1/to-do1.component';
 import { ToDo2Component } from './to-do2/to-do2.component';
 import { ToDo3Component } from './to-do3/to-do3.component';
 import { AboutUsModule } from './about-us/about-us.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -108,6 +109,7 @@ import { AboutUsModule } from './about-us/about-us.module';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     AboutUsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

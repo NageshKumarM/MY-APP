@@ -1,15 +1,15 @@
-<div class="parent" *ngIf="textData">
+<div class="parent" *ngFor="let data of todoData; let i =index" >
     <div class="text">
         <label for="">Text:</label>
-        <h2>{{ textData | slice:0:15 }}...</h2>
+        <h2>{{ data.textData | slice:0:15 }}...</h2>
     </div>
     <div class="date">
         <label for="">Time:</label>
-        <h2>{{dateData}}</h2>
+        <h2>{{data.dateData}}</h2>
     </div>
     <div class="button">
-        <button>View</button>
-        <button>Edit</button>
-        <button>Delete</button>
+        <button (click)="view(i)">View</button>
+        <button (click)="edit(i)">Edit</button>
+        <button (click)="delete(i)">Delete</button>
     </div>
 </div>

@@ -7,29 +7,54 @@ import { __values } from 'tslib';
 })
 export class ToDoService {
   
-  public text: any="";
-  public time: any="";
+  private tasks: { textData: string; dateData: string }[] = [];
+  public isVisible: boolean = false;
+  constructor() {}
 
-  private textSubject:BehaviorSubject<any> = new BehaviorSubject(this.text);
-  private timeSubject:BehaviorSubject<any> = new BehaviorSubject(this.time);
-  constructor() { }
+  //for adding new object
+  private taskSubject: BehaviorSubject<
+    { textData: string; dateData: string }[]
+  > = new BehaviorSubject(this.tasks);
 
-  //set value
-  setText(textvalue:any){
-    this.textSubject.next(textvalue);
+  setTask(task: { textData: string; dateData: string }) {
+    this.tasks.push(task);
+    this.taskSubject.next(this.tasks);
+  }
+  getTask() {
+    return this.taskSubject;
   }
 
-  setTime(timevalue:any){
-    this.timeSubject.next(timevalue);
+  //for edit button
+  private editSubject: BehaviorSubject<{ textData: string; dateData: string } | null> = new  BehaviorSubject<{ textData: string; dateData: string } | null>(null);
+
+  setEditTask(task: { textData: string; dateData: string }) {
+    this.editSubject.next(task);
+  }
+  getEditTask() {
+    return this.editSubject;
   }
 
-  // get value
+  //for view button
+  private selectedTaskSubject: BehaviorSubject<string> = new BehaviorSubject(
+    ''
+  );
 
-  getText(text: string){
-    return this.textSubject;
+  setSelectedTask(text: string) {
+    this.selectedTaskSubject.next(text);
+  }
+  getSelectedTask() {
+    return this.selectedTaskSubject;
   }
 
-  getTime(time: string){
-    return this.timeSubject;
+  // for boolean isVisible
+  private isVisibleSubject: BehaviorSubject<boolean> = new BehaviorSubject(
+    this.isVisible
+  );
+
+  setIsVisible(value: boolean) {
+    this.isVisibleSubject.next(value);
+  }
+  getIsVisible() {
+    return this.isVisibleSubject;
   }
 }

@@ -7,16 +7,24 @@ import { ToDoService } from '../to-do.service';
   styleUrls: ['./to-do2.component.css'],
 })
 export class ToDo2Component {
-  public textData: string = '';
-  public dateData: string = '';
+  public todoData:{textData:string,dateData:string}[]=[]
 
   constructor(private todoService: ToDoService) {}
   ngOnInit() {
-    this.todoService.getText(this.textData).subscribe((textData) => {
-      this.textData = textData;
-    });
-    this.todoService.getTime(this.dateData).subscribe((timeData) => {
-      this.dateData = timeData;
-    });
+    this.todoService.getTask().subscribe((data) => {
+      this.todoData=data;
+    })}
+ 
+  view(index:number){
+    const textValue=this.todoData[index].textData
+    this.todoService.setSelectedTask(textValue);
+    this.todoService.setIsVisible(true);
+  }
+  delete(index:number){
+    this.todoData.splice(index, 1);
+  }
+  edit(index:number){
+    const dataValue=this.todoData[index]
+    this.todoService.setEditTask(dataValue);
   }
 }
