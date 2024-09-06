@@ -19,7 +19,7 @@
         <!-- {{ employee.experience }} -->
           <app-rating [rating]="employee.experience"></app-rating>
       </td>
-      <td>{{ employee.package }}</td>
+      <td>{{ employee.package | price }}</td>
       <td>{{ employee.role }}</td>
       <td>
         <button (click)="delete(i)">Delete</button>

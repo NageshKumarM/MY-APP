@@ -29,7 +29,7 @@
     <tbody>
         <tr *ngFor="let bankaccount of bankaccounts">
             <td>{{bankaccount.account_name}}</td>
-            <td>{{bankaccount.available_balance}}</td>
+            <td>{{bankaccount.available_balance | price}}</td>
             <td>{{bankaccount.account_number}}</td>
             <td>{{bankaccount.city}}</td>
             <td>

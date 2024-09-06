@@ -53,6 +53,7 @@ import { ToDo3Component } from './to-do3/to-do3.component';
 import { AboutUsModule } from './about-us/about-us.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CapitalDirective } from './capital.directive';
+import { PricePipe } from './price.pipe';
 
 @NgModule({
   declarations: [
@@ -101,7 +102,8 @@ import { CapitalDirective } from './capital.directive';
     ToDo1Component,
     ToDo2Component,
     ToDo3Component,
-    CapitalDirective
+    CapitalDirective,
+    PricePipe
   ],
   imports: [
     BrowserModule,

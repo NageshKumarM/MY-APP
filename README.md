@@ -265,3 +265,5 @@ MODLE COMMUNICATION:
 CUSTOM DIRECTORIES:
 ==================
 
+Custom Directives
+Custom Pipes
