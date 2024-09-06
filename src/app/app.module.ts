@@ -52,6 +52,7 @@ import { ToDo2Component } from './to-do2/to-do2.component';
 import { ToDo3Component } from './to-do3/to-do3.component';
 import { AboutUsModule } from './about-us/about-us.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CapitalDirective } from './capital.directive';
 
 @NgModule({
   declarations: [
@@ -99,7 +100,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TODOComponent,
     ToDo1Component,
     ToDo2Component,
-    ToDo3Component
+    ToDo3Component,
+    CapitalDirective
   ],
   imports: [
     BrowserModule,
