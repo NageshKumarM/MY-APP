@@ -265,5 +265,24 @@ MODLE COMMUNICATION:
 CUSTOM DIRECTORIES:
 ==================
 
-Custom Directives
-Custom Pipes
+> Custom Directives
+> Custom Pipes
+> Custom Data type -->for data type defining (creating interface-- ng g i 'name')
+> Custom API-->API from json file(create a .json file in assets.)
+> Custom Enum --> for defining constants
+> Custom Decorators --> for defining custom annotations
+> Custom Services
+> Custom Interceptors
+> Custom Guards
+> Custom Resolvers
+> Custom Validators
+> Custom HTTP Client
+> Custom HTTP Interceptors
+> Custom HTTP Request
+> Custom HTTP Response
+> Custom HTTP Headers
+> Custom HTTP Query Parameters
+ 
+
+ ~ -> only patch version is variable
+ ^ -> both minor version and patch are variable
